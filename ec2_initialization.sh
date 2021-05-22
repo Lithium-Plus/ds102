@@ -11,6 +11,6 @@ aws s3 cp s3://ds102-bert-bucket/historical_data_2009Q1.txt ds102-bert/historica
 cd ~/ds102-bert
 virtualenv ds102_env
 source ds102_env/bin/activat
-pip install -r requirements.txt
+pip install -r ~/ds102/requirements.txt
 
 
