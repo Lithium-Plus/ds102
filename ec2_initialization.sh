@@ -6,10 +6,11 @@ export AWS_SESSION_TOKEN=FwoGZXIvYXdzECkaDK1OLewDl/eOks10tCKrAY7QCDzqhDMksb3Fqzj
 sudo apt install python3-pip python3-dev
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
-mkdir ~/ds102
-cd ~/ds102
+mkdir ~/ds102-bert
+aws s3 cp s3://ds102-bert-bucket/historical_data_2009Q1.txt ds102-bert/historical_data_2009Q1.txt
+cd ~/ds102-bert
 virtualenv ds102_env
-source ds102_env/bin/activate
-pip install dask
+source ds102_env/bin/activat
+pip install -r requirements.txt
 
 
